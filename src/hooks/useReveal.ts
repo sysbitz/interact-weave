@@ -5,17 +5,35 @@ export const useReveal = <T extends HTMLElement = HTMLDivElement>() => {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+
+    const reveal = () => el.classList.add("in");
+
+    if (!("IntersectionObserver" in window)) {
+      reveal();
+      return;
+    }
+
+    const isHashTarget = window.location.hash && el.matches(window.location.hash);
+    const rect = el.getBoundingClientRect();
+    const isAlreadyInView = rect.top < window.innerHeight && rect.bottom > 0;
+
+    if (isHashTarget || isAlreadyInView) {
+      reveal();
+      return;
+    }
+
     const io = new IntersectionObserver(
       (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add("in");
-            io.unobserve(e.target);
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0, rootMargin: "0px 0px -10% 0px" }
+      { threshold: 0, rootMargin: "120px 0px 120px 0px" }
     );
+
     io.observe(el);
     return () => io.disconnect();
   }, []);
