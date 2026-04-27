@@ -54,21 +54,17 @@ const WorkPage = () => {
   const hasMore = shown < filtered.length;
 
   return (
-    <section className="pt-40 pb-32 md:pt-52 md:pb-44">
-      <div className="container-edge">
-        <p className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground mb-6">
-          Selected work
-        </p>
-        <h1 className="font-serif text-5xl md:text-7xl leading-[0.95] tracking-tight max-w-4xl text-balance">
-          Case studies <span className="italic text-muted-foreground">in motion.</span>
-        </h1>
-        <p className="mt-6 text-muted-foreground max-w-2xl">
-          Web platforms, mobile apps, brand identities, marketing programs and embedded delivery —
-          filter by discipline or industry to find the work closest to yours.
-        </p>
-
+    <>
+      <PageHero
+        eyebrow="Selected work"
+        title={<>Case studies <span className="italic text-muted-foreground">in motion.</span></>}
+        subtitle="Web platforms, mobile apps, brand identities, marketing programs and embedded delivery — filter by discipline or industry to find the work closest to yours."
+        variant="torus"
+      />
+      <section className="pb-32 md:pb-44">
+        <div className="container-edge">
         {/* Filters */}
-        <div className="mt-12 space-y-5">
+        <div className="mt-2 space-y-5">
           <div>
             <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-muted-foreground mb-3">
               Discipline
