@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { getProject, projects } from "@/data/projects";
+import PageScene from "@/components/three/PageScene";
 
 const CaseStudyPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -27,8 +28,11 @@ const CaseStudyPage = () => {
   const next = projects[(idx + 1) % projects.length];
 
   return (
-    <article className="pt-32 md:pt-40">
-      <div className="container-edge">
+    <article className="pt-32 md:pt-40 relative">
+      <div className="pointer-events-none absolute top-0 right-0 h-[28rem] w-[28rem] opacity-60 -z-0">
+        <PageScene variant="knot" className="absolute inset-0" />
+      </div>
+      <div className="container-edge relative">
         <Link
           to="/work"
           className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors"
