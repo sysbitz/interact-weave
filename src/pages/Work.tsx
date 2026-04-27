@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import ProjectCard from "@/components/site/ProjectCard";
+import PageHero from "@/components/site/PageHero";
 import { projects, disciplines, industries, Discipline, Industry } from "@/data/projects";
 
 const PAGE_SIZE = 6;
