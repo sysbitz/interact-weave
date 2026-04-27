@@ -1,5 +1,6 @@
 import HeroScene from "@/components/three/HeroScene";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -37,21 +38,21 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 md:justify-end animate-fade-in [animation-delay:400ms]">
-            <a
-              href="#work"
+            <Link
+              to="/work"
               className="group inline-flex items-center gap-3 rounded-full bg-foreground text-background pl-6 pr-2 py-2 text-base font-medium hover:bg-accent transition-colors"
             >
               See selected work
               <span className="grid place-items-center h-9 w-9 rounded-full bg-background text-foreground group-hover:rotate-45 transition-transform duration-500">
                 <ArrowRight className="h-4 w-4" />
               </span>
-            </a>
-            <a
-              href="#contact"
+            </Link>
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-6 py-3 text-base hover:bg-secondary transition-colors"
             >
               Start a project
-            </a>
+            </Link>
           </div>
         </div>
       </div>
