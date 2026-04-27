@@ -143,8 +143,9 @@ const WorkPage = () => {
             </button>
           </div>
         )}
-      </div>
-    </section>
+        </div>
+      </section>
+    </>
   );
 };
 
