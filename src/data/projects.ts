@@ -351,7 +351,7 @@ export const projects: CaseStudy[] = [
     management: "Iterative roadmap shipped in two-week cycles with stakeholder demos at the end of each sprint.",
   },
 
-  // Design works (placeholders with swatches)
+  // Design works
   {
     slug: "yingala-alchemy-brand",
     client: "Yingala Alchemy",
@@ -370,41 +370,41 @@ export const projects: CaseStudy[] = [
     management: "Single-founder collaboration — fast iteration loops and a content calendar to sustain launch.",
   },
   {
-    slug: "buildwired-design-system",
-    client: "Internal · Buildwired",
-    title: "Studio design system",
+    slug: "earworm-brand",
+    client: "Earworm",
+    title: "Studio visual identity",
     year: "2024",
-    url: "#",
+    url: "https://earworm-dev.netlify.app/",
     discipline: "Design",
     industry: "Brand",
-    tags: ["Design system", "Tokens", "Figma"],
-    swatch: swatches[4],
+    tags: ["Identity", "Motion", "Web design"],
+    image: earworm,
     summary:
-      "An internal design system covering tokens, components and motion primitives that we deploy as the starting point for client engagements.",
-    design: "Token-driven scale: type, color, spacing and motion — with light and dark surfaces from day one.",
-    technology: "Figma library mapped 1:1 to a Tailwind + shadcn implementation for zero-loss handover.",
-    marketing: "Reduces time-to-launch on every project, which we lean into when pitching tight timelines.",
-    management: "Versioned releases, changelog and a guild of designers + engineers maintaining parity.",
+      "Visual identity and web art direction for a London video-podcast studio — bold, dark and unmistakably theirs.",
+    design: "High-contrast wordmark, neon accent system and a motion language that ties the site to the studio's content.",
+    technology: "Design tokens implemented in code for parity between Figma and the live site.",
+    marketing: "Identity tuned for the showreel-led pitch, with assets carried through to social and decks.",
+    management: "4-week creative sprint with weekly reviews and async sign-off cycles.",
   },
   {
-    slug: "ecom-art-direction",
-    client: "Confidential",
-    title: "E-commerce art direction",
+    slug: "alsobha-art-direction",
+    client: "Al Sobha Furniture",
+    title: "Furniture catalogue art direction",
     year: "2024",
-    url: "#",
+    url: "https://alsobhahomefurniture.com/",
     discipline: "Design",
     industry: "E-commerce",
-    tags: ["Art direction", "Product photography", "Web"],
-    swatch: swatches[5],
+    tags: ["Art direction", "Catalogue", "Interiors"],
+    image: alsobha,
     summary:
-      "Art direction for a fashion DTC brand spanning lookbook photography, motion and a refreshed visual language for the storefront.",
-    design: "Editorial layouts, monochrome palette and a typographic system that flexes from product to story pages.",
-    technology: "Asset pipeline tuned for AVIF/WebP delivery and CMS-driven editorial templates.",
-    marketing: "Seasonal campaign system the in-house team can re-skin per drop without losing visual integrity.",
-    management: "Coordinated photo shoot, talent and post-production across a 6-week window.",
+      "Art direction for a bespoke furniture studio — translating a physical showroom into an editorial digital catalogue.",
+    design: "Soft neutral palette, circular category imagery and serif headlines to anchor the premium positioning.",
+    technology: "Design system mapped to a WooCommerce theme to keep the storefront on-brand release after release.",
+    marketing: "Category-led visual storytelling tuned for interior-design search intent and Instagram reuse.",
+    management: "Coordinated with the in-house design team on the photography and styling pipeline.",
   },
 
-  // Marketing engagements (placeholders)
+  // Marketing engagements
   {
     slug: "halal-wellness-growth",
     client: "Barakka Group",
@@ -414,7 +414,7 @@ export const projects: CaseStudy[] = [
     discipline: "Marketing",
     industry: "E-commerce",
     tags: ["SEO", "Performance ads", "CRO"],
-    swatch: swatches[6],
+    image: barakka,
     summary:
       "Ongoing growth program for a halal wellness brand: SEO, paid acquisition and conversion optimisation across DACH markets.",
     design: "Landing page system tuned for ad creative, with modular hero variants for testing.",
@@ -431,7 +431,7 @@ export const projects: CaseStudy[] = [
     discipline: "Marketing",
     industry: "EdTech",
     tags: ["Launch", "Funnel", "Content"],
-    swatch: swatches[7],
+    image: aiBangladesh,
     summary:
       "End-to-end launch campaign for an AI academy — from positioning and messaging to trial-class funnel and community ops.",
     design: "Campaign visual system anchored on documentary photography of real students.",
@@ -448,7 +448,7 @@ export const projects: CaseStudy[] = [
     discipline: "Marketing",
     industry: "E-commerce",
     tags: ["Brand launch", "Email", "Paid social"],
-    swatch: swatches[0],
+    image: damagedgoodz,
     summary:
       "Go-to-market playbook for the Damaged Goodz launch — positioning, lifecycle email, paid social and influencer seeding.",
     design: "Campaign creative system that extended the gritty brand into ad units, email and packaging inserts.",
@@ -457,7 +457,7 @@ export const projects: CaseStudy[] = [
     management: "Weekly war-room cadence with the founders through the first 90 days of trading.",
   },
 
-  // Management engagements (placeholders)
+  // Management engagements
   {
     slug: "edu-platform-delivery",
     client: "University of Rajshahi",
@@ -467,7 +467,7 @@ export const projects: CaseStudy[] = [
     discipline: "Management",
     industry: "Education",
     tags: ["Program management", "Stakeholders", "Governance"],
-    swatch: swatches[1],
+    image: rajshahi,
     summary:
       "Program-managed the rebuild of a national university web platform across faculties, IQAC and IT, landing on time despite a complex stakeholder map.",
     design: "Facilitated design reviews aligning faculties, communications and IT on a single information architecture.",
@@ -484,7 +484,7 @@ export const projects: CaseStudy[] = [
     discipline: "Management",
     industry: "E-commerce",
     tags: ["Roadmap", "Vendor mgmt", "Localization"],
-    swatch: swatches[6],
+    image: barakka,
     summary:
       "Embedded program management across product, suppliers and translation vendors to keep a multilingual marketplace on a single release plan.",
     design: "Owned the design ↔ engineering critique cadence and the source-of-truth in Figma.",
@@ -493,21 +493,21 @@ export const projects: CaseStudy[] = [
     management: "Risk and dependency tracking across three time zones and two languages.",
   },
   {
-    slug: "fractional-product-leadership",
-    client: "Confidential SaaS",
-    title: "Fractional product leadership",
+    slug: "atlantis-delivery",
+    client: "Atlantis Cleaning Solutions",
+    title: "Lead-gen site delivery",
     year: "2024",
-    url: "#",
+    url: "https://atlantiscleaning.co.uk/",
     discipline: "Management",
-    industry: "SaaS",
-    tags: ["Fractional", "Strategy", "Discovery"],
-    swatch: swatches[3],
+    industry: "Corporate",
+    tags: ["Delivery", "Discovery", "Launch"],
+    image: atlantis,
     summary:
-      "Fractional head-of-product engagement for an early-stage SaaS — discovery, roadmap and a delivery rhythm the team kept after we left.",
-    design: "Set up a lightweight design critique and a simple product principles doc to ground decisions.",
-    technology: "Introduced a thin RFC process and a definition-of-done that unblocked engineering velocity.",
-    marketing: "Reframed positioning around the strongest user segment and rewrote the homepage narrative.",
-    management: "Quarterly OKRs, a healthy meeting hygiene and an interview cadence with users baked into every sprint.",
+      "Managed end-to-end delivery of a premium lead-gen site for a cleaning company — discovery, content, build and launch in one window.",
+    design: "Owned creative reviews and copy approvals to keep the brand voice intact through every page.",
+    technology: "Single-window release with tracking, quote flow and CRM hand-off validated before go-live.",
+    marketing: "Aligned local SEO, service-page architecture and CTA tracking with the operations team.",
+    management: "Weekly status with the founders, scoped change-control and a clean handover for the in-house team.",
   },
 ];
 
