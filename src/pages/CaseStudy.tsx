@@ -50,6 +50,9 @@ const CaseStudyPage = () => {
 
         <p className="mt-6 text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground">
           {item.client}
+          {item.partner && (
+            <span className="ml-3 text-accent">in partnership with {item.partner}</span>
+          )}
         </p>
         <h1 className="font-serif text-5xl md:text-7xl leading-[0.95] tracking-tight mt-3 max-w-4xl text-balance">
           {item.title}
