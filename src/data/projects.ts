@@ -44,6 +44,7 @@ export type CaseStudy = {
   tags: string[];
   image?: string;
   swatch?: string;
+  partner?: string;
   summary: string;
   design: string;
   technology: string;
