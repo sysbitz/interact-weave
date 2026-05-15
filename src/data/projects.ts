@@ -22,7 +22,8 @@ export type Discipline =
   | "Mobile App"
   | "Design"
   | "Marketing"
-  | "Management";
+  | "Management"
+  | "Security";
 
 export type Industry =
   | "E-commerce"
