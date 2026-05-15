@@ -22,7 +22,14 @@ const ProjectCard = ({ p }: { p: CaseStudy }) => (
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
       <div className="absolute top-5 left-5 right-5 flex items-center justify-between text-xs font-mono uppercase tracking-widest text-white/90">
         <span>{p.client}</span>
-        <span>{p.year}</span>
+        <span className="flex items-center gap-2">
+          {p.partner && (
+            <span className="rounded-full border border-white/30 px-2 py-0.5 text-[10px] tracking-[0.18em] text-white/80">
+              w/ {p.partner}
+            </span>
+          )}
+          <span>{p.year}</span>
+        </span>
       </div>
       <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between text-white">
         <div className="max-w-[80%]">

@@ -12,6 +12,10 @@ import barakka from "@/assets/work/barakkagroup.png";
 import atlantis from "@/assets/work/atlantiscleaning.png";
 import noorkids from "@/assets/work/noorkids.png";
 import moroccanrug from "@/assets/work/moroccanrug.png";
+import dbSama from "@/assets/partner-dashbloom/sama.png";
+import dbIshamn from "@/assets/partner-dashbloom/ishamn.png";
+import dbOrion from "@/assets/partner-dashbloom/orion.png";
+import dbCargoshift from "@/assets/partner-dashbloom/cargoshift.png";
 
 export type Discipline =
   | "Web Development"
@@ -40,6 +44,7 @@ export type CaseStudy = {
   tags: string[];
   image?: string;
   swatch?: string;
+  partner?: string;
   summary: string;
   design: string;
   technology: string;
@@ -508,6 +513,80 @@ export const projects: CaseStudy[] = [
     technology: "Single-window release with tracking, quote flow and CRM hand-off validated before go-live.",
     marketing: "Aligned local SEO, service-page architecture and CTA tracking with the operations team.",
     management: "Weekly status with the founders, scoped change-control and a clean handover for the in-house team.",
+  },
+
+  // Partner work — Dashbloom
+  {
+    slug: "sama-booking-app",
+    client: "Samā",
+    title: "Booking app UI & branding",
+    year: "2024",
+    url: "https://dashbloom.design/",
+    discipline: "Design",
+    industry: "Brand",
+    tags: ["UI/UX Design", "Branding", "Mobile"],
+    image: dbSama,
+    partner: "Dashbloom",
+    summary:
+      "A booking app experience pairing a calm visual identity with a frictionless reservation flow — designed to feel premium from first tap.",
+    design: "Soft, hospitality-leaning palette, custom iconography and a typographic system tuned for quick scanning across listing, detail and checkout.",
+    technology: "Component library aligned with native patterns so engineering can ship the same flows on iOS and Android without duplicating work.",
+    marketing: "Onboarding screens and empty states written as conversion surfaces — every moment nudges toward the first booking.",
+    management: "Delivered in partnership with Dashbloom on a fixed creative sprint, with weekly reviews and a clean handoff to the in-house product team.",
+  },
+  {
+    slug: "ishamn-apparel",
+    client: "IsHamn",
+    title: "Apparel e-commerce site",
+    year: "2024",
+    url: "https://dashbloom.design/",
+    discipline: "Design",
+    industry: "E-commerce",
+    tags: ["Website Design", "Branding", "Apparel"],
+    image: dbIshamn,
+    partner: "Dashbloom",
+    summary:
+      "A modern apparel storefront pairing editorial photography with a clean conversion path — built to grow a young fashion brand into a category contender.",
+    design: "Editorial grid, oversized typography and product-led colour stories that let each drop own the page.",
+    technology: "Storefront patterns mapped to a headless commerce backend with structured product data and fast PDPs.",
+    marketing: "Lookbook-led merchandising, drop campaigns and email capture woven into the browsing experience.",
+    management: "Co-delivered with Dashbloom against a launch window, with art direction and engineering tracked on one plan.",
+  },
+  {
+    slug: "orion-saas",
+    client: "Orion",
+    title: "SaaS product & dashboard",
+    year: "2024",
+    url: "https://dashbloom.design/",
+    discipline: "Design",
+    industry: "SaaS",
+    tags: ["Product Design", "Dashboard", "SaaS"],
+    image: dbOrion,
+    partner: "Dashbloom",
+    summary:
+      "A SaaS product UI and dashboard system designed to make complex data feel calm — with a component library scaling to dozens of views.",
+    design: "Information-dense yet airy: a clear typographic hierarchy, accent-led data viz and patterns for tables, filters and detail drawers.",
+    technology: "Design tokens and a component spec ready for engineering to drop into a React + Tailwind stack.",
+    marketing: "Marketing site patterns aligned with the in-product tone so the leap from landing page to trial feels seamless.",
+    management: "Partnered with Dashbloom on the product-design track while the in-house team owned engineering and roadmap.",
+  },
+  {
+    slug: "cargoshift-logistics",
+    client: "CargoShift",
+    title: "Logistics visual identity",
+    year: "2024",
+    url: "https://dashbloom.design/",
+    discipline: "Design",
+    industry: "Brand",
+    tags: ["Visual Identity", "Branding", "Logistics"],
+    image: dbCargoshift,
+    partner: "Dashbloom",
+    summary:
+      "A bold, motion-forward visual identity for a logistics platform — built to feel as fast and dependable as the service it represents.",
+    design: "Wordmark, iconography and a high-contrast colour system extended across web, app and operational collateral.",
+    technology: "Brand tokens packaged for the product team so identity and UI stay in sync release after release.",
+    marketing: "Identity carried through to landing pages, sales decks and operator-facing comms with one consistent voice.",
+    management: "Delivered in partnership with Dashbloom across discovery, identity and rollout, with stakeholder reviews at each milestone.",
   },
 ];
 
