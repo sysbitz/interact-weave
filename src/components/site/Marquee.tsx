@@ -4,6 +4,8 @@ const techs = [
   "React", "Next.js", "TypeScript", "Three.js", "Node.js", "Postgres",
   "Tailwind", "Figma", "Framer Motion", "Supabase", "Stripe", "GSAP",
   "React Native", "WebGL", "Vercel", "AWS",
+  "SEO", "SMM", "Ad Consultancy", "Google Ads", "Meta Ads", "Content Strategy",
+  "Email Marketing", "Brand Identity", "Analytics", "CRO", "Copywriting", "PR",
 ];
 
 const Marquee = () => {
