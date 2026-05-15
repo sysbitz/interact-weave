@@ -4,6 +4,8 @@ const techs = [
   "React", "Next.js", "TypeScript", "Three.js", "Node.js", "Postgres",
   "Tailwind", "Figma", "Framer Motion", "Supabase", "Stripe", "GSAP",
   "React Native", "WebGL", "Vercel", "AWS",
+  "SEO", "SMM", "Ad Consultancy", "Google Ads", "Meta Ads", "Content Strategy",
+  "Email Marketing", "Brand Identity", "Analytics", "CRO", "Copywriting", "PR",
 ];
 
 const Marquee = () => {
@@ -12,7 +14,7 @@ const Marquee = () => {
     <section ref={ref} className="reveal py-16 md:py-24 border-y hairline overflow-hidden">
       <div className="container-edge mb-8">
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-muted-foreground">
-          // Stack we wire with
+          // Stack & channels we wire — engineering, design, growth & media
         </p>
       </div>
       <div className="relative flex overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_10%,black_90%,transparent)]">
