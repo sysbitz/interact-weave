@@ -22,7 +22,8 @@ export type Discipline =
   | "Mobile App"
   | "Design"
   | "Marketing"
-  | "Management";
+  | "Management"
+  | "Security";
 
 export type Industry =
   | "E-commerce"
@@ -588,6 +589,76 @@ export const projects: CaseStudy[] = [
     marketing: "Identity carried through to landing pages, sales decks and operator-facing comms with one consistent voice.",
     management: "Delivered in partnership with Dashbloom across discovery, identity and rollout, with stakeholder reviews at each milestone.",
   },
+
+  // Website security — WordPress hardening & monitoring
+  {
+    slug: "moroccanrugs-security",
+    client: "Moroccan Rugs",
+    title: "WordPress security hardening",
+    year: "2024",
+    url: "https://moroccanrugs.com/",
+    discipline: "Security",
+    industry: "E-commerce",
+    tags: ["WordPress", "WooCommerce", "Hardening", "Monitoring"],
+    swatch: swatches[2],
+    summary:
+      "End-to-end security hardening for a WooCommerce storefront — closing common WordPress attack surfaces and standing up continuous monitoring.",
+    design: "Trust signals surfaced at checkout — SSL state, payment badges and a transparent privacy posture for international shoppers.",
+    technology: "WAF rules, plugin-vulnerability scanning, brute-force protection, file-integrity monitoring and least-privilege admin roles.",
+    marketing: "Communicated security upgrades as a brand asset across product pages and the checkout experience.",
+    management: "Quarterly audit cadence, patch SLAs and an incident-response runbook owned with the operations team.",
+  },
+  {
+    slug: "musmusrugs-security",
+    client: "Musmus Rugs",
+    title: "WordPress security & uptime",
+    year: "2024",
+    url: "https://musmusrugs.com/",
+    discipline: "Security",
+    industry: "E-commerce",
+    tags: ["WordPress", "WooCommerce", "Backups", "Uptime"],
+    swatch: swatches[5],
+    summary:
+      "WooCommerce hardening and uptime monitoring for a DTC rugs brand — backups, vulnerability scanning and a clean recovery path.",
+    design: "Refreshed checkout trust patterns and consent UX without disrupting the existing storefront identity.",
+    technology: "Automated off-site backups, malware scanning, login throttling, 2FA on admins and version-pinned plugin management.",
+    marketing: "Faster, healthier site delivered measurable Core Web Vitals lift alongside the security work.",
+    management: "Monthly security report, alerting wired to on-call and a tested restore procedure.",
+  },
+  {
+    slug: "berberorugs-security",
+    client: "Berbero Rugs",
+    title: "WooCommerce hardening & WAF",
+    year: "2024",
+    url: "https://berberorugs.com/",
+    discipline: "Security",
+    industry: "E-commerce",
+    tags: ["WordPress", "WAF", "PCI-aware", "Hardening"],
+    swatch: swatches[1],
+    summary:
+      "Security baseline for a Berber rugs storefront — WAF deployment, admin lockdown and a PCI-aware checkout posture.",
+    design: "Maintained the editorial brand feel while introducing clearer trust signals and consent flows.",
+    technology: "Cloud WAF in front of origin, SSL/TLS hardening, secure headers (CSP, HSTS), and audit logging for admin actions.",
+    marketing: "Security and performance gains positioned to support international SEO and paid acquisition.",
+    management: "Risk register, change-control on plugin updates and a clear handover document for the in-house team.",
+  },
+  {
+    slug: "musmoments-security",
+    client: "Mus Moments",
+    title: "WordPress site security",
+    year: "2024",
+    url: "https://musmoments.com/",
+    discipline: "Security",
+    industry: "Editorial",
+    tags: ["WordPress", "Hardening", "Backups", "Monitoring"],
+    swatch: swatches[3],
+    summary:
+      "Hardened a WordPress publishing site against the most common attack patterns and stood up continuous monitoring with clean recovery paths.",
+    design: "Kept the editorial reading experience untouched while improving consent, login and admin UX.",
+    technology: "Automated backups, vulnerability scanning, 2FA on editors, brute-force protection and secure-header rollout.",
+    marketing: "Improved Core Web Vitals and trust signals positioned to support organic growth.",
+    management: "Quarterly audits, patch cadence and an incident playbook documented for the editorial team.",
+  },
 ];
 
 export const disciplines: Discipline[] = [
@@ -596,6 +667,7 @@ export const disciplines: Discipline[] = [
   "Design",
   "Marketing",
   "Management",
+  "Security",
 ];
 
 export const industries: Industry[] = [
