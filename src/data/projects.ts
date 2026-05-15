@@ -513,6 +513,7 @@ export const projects: CaseStudy[] = [
     technology: "Single-window release with tracking, quote flow and CRM hand-off validated before go-live.",
     marketing: "Aligned local SEO, service-page architecture and CTA tracking with the operations team.",
     management: "Weekly status with the founders, scoped change-control and a clean handover for the in-house team.",
+  },
 
   // Partner work — Dashbloom
   {
