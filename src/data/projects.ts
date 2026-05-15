@@ -12,6 +12,10 @@ import barakka from "@/assets/work/barakkagroup.png";
 import atlantis from "@/assets/work/atlantiscleaning.png";
 import noorkids from "@/assets/work/noorkids.png";
 import moroccanrug from "@/assets/work/moroccanrug.png";
+import dbSama from "@/assets/partner-dashbloom/sama.png";
+import dbIshamn from "@/assets/partner-dashbloom/ishamn.png";
+import dbOrion from "@/assets/partner-dashbloom/orion.png";
+import dbCargoshift from "@/assets/partner-dashbloom/cargoshift.png";
 
 export type Discipline =
   | "Web Development"
