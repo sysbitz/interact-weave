@@ -38,8 +38,8 @@ const Nav = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <span className="relative inline-flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
-              <img src="/BUILDWIRED.png" alt="Logo"  className="h-auto w-auto" />
-              {/* <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-accent" />
+              <img src="/BUILDWIRED.png" alt="Logo"  className="h-36 w-36" />
+              {/* <span className="relative inline-flex h-2.5 w-25 rounded-full bg-accent" />
             </span>
             <span className="font-serif text-xl tracking-tight">
               build<span className="italic text-accent">wired</span> */}
