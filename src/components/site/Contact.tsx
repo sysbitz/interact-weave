@@ -17,10 +17,10 @@ const Contact = () => {
         </h2>
 
         <a
-          href="mailto:hello@buildwired.com"
+          href="mailto:buildwiredofficial@gmail.com"
           className="group inline-flex items-center gap-3 mt-14 rounded-full bg-foreground text-background pl-7 pr-2 py-2.5 text-base font-medium hover:bg-accent transition-colors"
         >
-          hello@buildwired.com
+          buildwiredofficial@gmail.com
           <span className="grid place-items-center h-10 w-10 rounded-full bg-background text-foreground group-hover:rotate-45 transition-transform duration-500">
             <ArrowRight className="h-4 w-4" />
           </span>
@@ -29,7 +29,7 @@ const Contact = () => {
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto text-left">
           {[
             { k: "Studio", v: "Remote · Worldwide" },
-            { k: "Hours", v: "Mon–Fri · 09–18 CET" },
+            { k: "Hours", v: "Thu–Fri · 24 hours" },
             { k: "New work", v: "Q3 · 02 slots" },
             { k: "Reply within", v: "24 hours" },
           ].map((b) => (
